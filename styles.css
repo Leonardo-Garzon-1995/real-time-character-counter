@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #19004a;
+    color: whitesmoke;
+}
+
+h1 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+}
+
+#text-input {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 50%;
+    height: 10rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    resize: none;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+#char-count {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
