@@ -1,4 +1,4 @@
-const MAX = 50;
+const MAX = 100;
 const textInput = document.getElementById('text-input');
 const charCount = document.getElementById('char-count');
 
@@ -20,9 +20,17 @@ function updateCounter() {
     charCount.style.color = len >= MAX ? 'red' : '';
 }
 
+function displayText() {
+    const displayTextEl = document.querySelector('.display-text');
+    if (displayTextEl) displayTextEl.textContent = textInput?.value;
+}
+
 // Update live and after IME composition
 textInput?.addEventListener('input', updateCounter);
+textInput?.addEventListener('input', displayText);
 textInput?.addEventListener('compositionend', updateCounter);
+textInput?.addEventListener('compositionend', displayText);
 
 // Ensure initial state is correct if textarea has pre-filled content
 updateCounter();
+
